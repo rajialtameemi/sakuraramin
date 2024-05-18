@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/sakura_logo.png">
+    <title>Sakura Rahmen </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">   <!-- Dies ist der Verbund von HTML zu seiner CSS-Klasse. Unbedingt Name anpassen!   -->
+    <!-- Font Raleway-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Font Economica-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script id="CookieDeclaration" src="https://consent.cookiebot.com/c351ea1d-58dd-4386-a18f-ef8137ffd257/cd.js" type="text/javascript" async></script>
+</head>
+
+    <!-- 1. TEIL-->
+
+<body>
+    <header id="top_elemente">
+        <div class="mittig_1440">
+            <img class="small-image-1" src="/img/1_hero/sakura_logo.png">
+            <nav class="menu">
+                <a class="hide-mobile" href="#our_menu">MENU</a>
+                <a class="hide-mobile" href="#location">LOCATIONS</a>
+                <a class="hide-mobile" href="#footer">ABOUT</a>
+                <a class="order-btn" href="tel:068181293663">
+                    <img src="img/1_hero/phone.svg" id="phone">
+                    068181293663
+                </a>
+
+                <!-- <button onclick="nuevo()">German</button> -->
+                <img onclick="deutsch()" class="small-image-1" src=".//img/img_translation/german_flag.png"></img>
+                <img onclick="english()" class="small-image-1" src=".//img/img_translation/english_flag.png"></img>
+                    <script>
+                        function deutsch(){
+                            document.getElementById('untertitel').innerHTML= `
+                            <span>DIE BESTEN RAMEN DER STADT</span>`;
+                            document.getElementById('titel_2').innerHTML= `
+                            <h2>SO BESTELLEN SIE</h2>`;
+                            
+                            document.getElementById('noodle').innerHTML= `
+                            <h3>Wählen Sie Ihre <br> Nudel</h3>`;
+                            document.getElementById('broth').innerHTML= `
+                            <h3>Wählen Sie Ihr <br> Brot</h3>`;
+                            document.getElementById('topping').innerHTML= `
+                            <h3>Wählen Sie Ihre <br> Topping</h3>`;
+
+                            document.getElementById('our_menu').innerHTML= `
+                            <h2>UNSER MENU</h2>`;
+                            document.getElementById('location').innerHTML= `
+                            <h2>FINDEN SIE UNS UNTER</h2>`;
+                        }
+                        function english(){
+                            document.getElementById('untertitel').innerHTML= `
+                            <span>THE BEST RAMEN IN TOWN</span>`;
+                            document.getElementById('titel_2').innerHTML= `
+                            <h2>HOW TO ORDER</h2>`;
+                            
+                            document.getElementById('noodle').innerHTML= `
+                            <h3>Pick your <br> noodle</h3>`;
+                            document.getElementById('broth').innerHTML= `
+                            <h3>Pick your <br> broth</h3>`;
+                            document.getElementById('topping').innerHTML= `
+                            <h3>Pick your <br> topping</h3>`;
+
+                            document.getElementById('our_menu').innerHTML= `
+                            <h2>OUR MENU</h2>`;
+                            document.getElementById('location').innerHTML= `
+                            <h2>FIND US AT</h2>`;
+                        }
+
+
+                    </script>
+                    
+                
+            
+           
+            </nav>
+        </div>
+    </header>
+
+    <div class="atf">
+        <div class="main-container">
+            <h1>SAKURA RAMEN </h1>
+            <p id="untertitel">
+                <span>THE BEST RAMEN IN TOWN</span>
+            </p>
+        </div>
+    </div>
+
+<!-- 2. TEIL-->
+    <div id="titel_2">
+        <h2> HOW TO ORDER</h2>
+    </div>
+    <div class="mittig_subcontainer">
+        <div class="how_to_order_container">
+            <div class="how_to_order_container_sub">
+                <img class="how_to_order_img" src="/img/2_section_how_to_order/PNG/noodle.png">
+                <div id="noodle">
+                    <h3>Pick your <br> noodle </h3>
+                </div>
+            </div>
+
+            <div class="how_to_order_container_sub">
+                <img class="how_to_order_img" src=".//img/2_section_how_to_order/PNG/broth.png">
+                <div id="broth">
+                    <h3>Pick your <br> broth</h3>
+                </div>
+
+            </div>
+
+            <div class="how_to_order_container_sub">
+                <img class="how_to_order_img" src="/img/2_section_how_to_order/PNG/egg.png">
+                <div id="topping">
+                    <h3>Add your <br> toppings</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 3. TEIL-->
+<div class="background-image-2">
+    <h2 id="our_menu">OUR MENU</h2>
+    
+
+    <div class="our_menu_img_table">
+        <img class="ramen-img-top-container" src="/img/3_section_our_menu/Png/R1.png">
+            <div class="our_menu_name_price">
+                <h3>Tonkotsu Ramen</h3>
+                <div class="dish_info">
+                    <table>
+                        <tr style="display: flex; justify-content: space-between;">
+                            <td>CHICKEN</td> 
+                            <td>13.95 €</td>
+                        </tr>
+                        <tr style="display: flex; justify-content: space-between;">
+                            <td>BEEF</td> 
+                            <td>15.95 €</td>
+                        </tr>
+                        <tr style="display: flex; justify-content: space-between;">
+                            <td>SHRIMP</td>
+                            <td>12.95 €</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </div>
+
+    <div class="our_menu_img_table" id="ramen-img-sub-container-right">
+        <img class="ramen-img-top-container" src=".//img/3_section_our_menu/Png/R2.png">
+        <div class="our_menu_name_price">
+                <h3>Spicy Miso Ramen</h3>
+                <div class="dish_info">
+                    <table>
+                        <tr style="display: flex; justify-content: space-between;">
+                            <td>CHICKEN</td> 
+                            <td>13.95 €</td>
+                        </tr>
+                        <tr style="display: flex; justify-content: space-between;">
+                            <td>BEEF</td> 
+                            <td>15.95 €</td>
+                        </tr>
+                        <tr style="display: flex; justify-content: space-between;">
+                            <td>SHRIMP</td>
+                            <td>12.95 €</td>
+                        </tr>
+                    </table>
+                </div>    
+        </div>
+    </div>    
+
+    <div class="our_menu_img_table" id="ramen-last">
+        <img class="ramen-img-top-container" src="./img/3_section_our_menu/Png/R3.png">
+        <div class="our_menu_name_price">
+                <h3>Shio Ramen</h3>
+                <div class="dish_info">
+                    <table>
+                        <tr style="display: flex; justify-content: space-between;">
+                            <td>CHICKEN</td> 
+                            <td>13.95 €</td>
+                        </tr>
+                        <tr style="display: flex; justify-content: space-between;">
+                            <td>BEEF</td> 
+                            <td>15.95 €</td>
+                        </tr>
+                        <tr style="display: flex; justify-content: space-between;">
+                            <td>SHRIMP</td>
+                            <td>12.95 €</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+<!-- 4. TEIL-->
+    <div id="location">
+        <div class="h2_titel_3">
+        <h2>FIND US AT</h2> 
+        </div>
+    </div>
+
+    <body_adresse>
+        <img class="adress-image" src="./img/4_section_find_us_at/PNG/map_marker.png">
+        <body>Am Schlossberg, 8010 Graz</body>
+    </body_adresse>
+    <iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.666155271369!2d15.453771176790603!3d47.06639882512423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e4a8631fad93d%3A0x8b105aee90c29504!2sKrenngasse%206%2C%208010%20Graz!5e0!3m2!1sde!2sat!4v1715437314979!5m2!1sde!2sat" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="mittig_subcontainer">
+    <footer>
+        <div class="footer">
+        <div>
+            <img class="small-image-2" src="./img/1_hero/sakura_logo.png"> 
+            <footer_titel id="footer"> SAKURA RAMEN</footer_titel>
+        </div>
+
+        <div>
+            <a href="https://www.tripadvisor.com/">
+            <img class="footer_logos_img" src="./img//5_section_footer/PNG/tripadvisor_logo.png"> 
+            </a>
+
+            <a href="https://www.facebook.com/">
+            <img class="footer_logos_img" src="./img//5_section_footer/PNG/facebook_logo.png">
+               </a>
+
+            <a href="https://instagram.com/">
+            <img class="footer_logos_img" src="./img/5_section_footer/PNG/instagrram_logo.png">
+            </a>
+        </div>
+        </div>
+    </footer>
+    </div>
+
+</body>
+</html>
